@@ -1,17 +1,6 @@
-import { Button } from "../components/ui/Button";
-import { Card } from "../components/ui/Card";
-import {
-  Warehouse,
-  ShoppingCart,
-  Headphones,
-  Building2,
-  Users,
-  Globe2,
-} from "lucide-react";
-import ContactForm from "../components/ContactForm";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 import "swiper/css";
@@ -97,14 +86,3 @@ export default function Home() {
   );
 }
 
-function FeatureCard({ icon, title, description }) {
-  return (
-    <div className="flex items-start space-x-4">
-      <div className="mt-1">{icon}</div>
-      <div>
-        <h3 className="text-lg font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </div>
-  );
-}
