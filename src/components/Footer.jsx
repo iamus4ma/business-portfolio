@@ -1,80 +1,99 @@
-import { Link } from "react-router-dom"
-import { Facebook, Twitter, Linkedin, Mail, MapPin, Phone } from "lucide-react"
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const currentYear = new Date().getFullYear();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle email subscription
+    console.log("Email submitted:", email);
+    setEmail("");
+  };
+
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+    <footer className="bg-[#1a1a1a] text-white pt-16 pb-6">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          {/* Newsletter Section */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">East Winners</h3>
-            <p className="text-sm">Your trusted partner in international trade and logistics since 2006.</p>
+            <h3 className="text-lg font-bold mb-6">
+              EASTWINNERS IMPORT EXPORT
+            </h3>
+            <form onSubmit={handleSubmit} className="flex">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Email Address"
+                className="flex-1 bg-transparent border border-[#333] px-4 py-2 text-sm focus:outline-none focus:border-[#4CAF50]"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-[#4CAF50] px-4 py-2 text-white hover:bg-[#45a049] transition-colors"
+              >
+                →
+              </button>
+            </form>
           </div>
 
-          {/* Quick Links */}
+          {/* Company Section */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="hover:text-primary transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="hover:text-primary transition-colors">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="hover:text-primary transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+            <h3 className="text-lg font-bold mb-6">COMPANY</h3>
+            <Link
+              to="/contact"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              Contact Us
+            </Link>
           </div>
 
-          {/* Contact Info */}
+          {/* Find Us Section */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-2">
-              <li className="flex items-center">
-                <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Business Street, City, Country</span>
-              </li>
-              <li className="flex items-center">
-                <Phone className="h-4 w-4 mr-2" />
-                <span>+1 234 567 890</span>
-              </li>
-              <li className="flex items-center">
-                <Mail className="h-4 w-4 mr-2" />
-                <span>contact@eastwinners.com</span>
-              </li>
-            </ul>
+            <h3 className="text-lg font-bold mb-6">FIND US</h3>
+            <p className="text-gray-400">
+              Kasteelstraat 223 d B-9255
+              <br />
+              Buggenhout, Belgium
+            </p>
           </div>
 
-          {/* Social Links */}
+          {/* Questions Section */}
           <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="hover:text-primary transition-colors">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a href="#" className="hover:text-primary transition-colors">
-                <Linkedin className="h-5 w-5" />
+            <h3 className="text-lg font-bold mb-6">HAVE A QUESTIONS?</h3>
+            <div className="space-y-4">
+              <Link
+                to="/contact"
+                className="text-[#4CAF50] hover:text-[#45a049] transition-colors block"
+              >
+                Get In Touch
+              </Link>
+              <p className="text-gray-400">+32 484 163 106</p>
+              <Link
+                to="#"
+                className="text-[#4CAF50] hover:text-[#45a049] transition-colors block"
+              >
+                Ask Anytime
+              </Link>
+              <a
+                href="mailto:info@eastwinners.com"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                info@eastwinners.com
               </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
-          <p>&copy; {new Date().getFullYear()} East Winners Import Export. All rights reserved.</p>
+        {/* Bottom Bar */}
+        <div className="border-t border-[#333] pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-400 text-sm text-center md:text-left">
+            Copyright © {currentYear} Eastwinners. All Rights Reserved
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
-
