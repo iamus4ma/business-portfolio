@@ -65,15 +65,21 @@ export default function Footer() {
             <h3 className="text-lg font-bold mb-6">HAVE A QUESTIONS?</h3>
             <div className="space-y-4">
               <Link
-                to="/contact"
-                className="text-[#4CAF50] hover:text-[#45a049] transition-colors block"
+                to="#"
+                className="text-[#4CAF50] hover:text-[#45a049] font-semibold transition-colors block"
               >
                 Get In Touch
               </Link>
-              <p className="text-gray-400">+32 484 163 106</p>
+
+              <a
+                href="tel:+32484163106"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                +32 484 163 106
+              </a>
               <Link
                 to="#"
-                className="text-[#4CAF50] hover:text-[#45a049] transition-colors block"
+                className="text-[#4CAF50] hover:text-[#45a049] font-semibold transition-colors block"
               >
                 Ask Anytime
               </Link>
@@ -88,8 +94,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-[#333] pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400 text-sm text-center md:text-left">
+        <div className="border-t border-[#333] pt-6 flex flex-col md:flex-row justify-center items-center gap-4">
+          <p className="text-gray-400 text-sm font-semibold text-center md:text-left">
             Copyright © {currentYear} Eastwinners. All Rights Reserved
           </p>
         </div>

@@ -49,12 +49,12 @@ export default function Header() {
           <Link
             title="Home"
             to="/"
-            className="text-md font-semibold hover:text-[#3ba52d] transition-colors"
+            className="text-md font-semibold hover:text-[#4CAF50] transition-colors"
           >
             Home
           </Link>
           <div className="relative group">
-            <Link className="text-md font-semibold transition-colors inline-flex items-center gap-1 text-black group-hover:text-green-500">
+            <Link className="text-md font-semibold transition-colors inline-flex items-center gap-1 text-black group-hover:text-[#4CAF50]">
               <span className="group-hover:hidden flex items-center gap-1">
                 Services <Plus className="group-hover:hidden h-4 w-4" />
               </span>
@@ -64,14 +64,14 @@ export default function Header() {
               </span>
             </Link>
             {/* Desktop Services Dropdown */}
-            <div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-t-4 border-t-[#3ba52d]">
+            <div className="absolute top-full left-0 mt-4 w-64 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-t-4 border-t-[#4CAF50]">
               {services?.map((service) => (
                 <Link
                   key={service?.path}
                   to={service?.path}
-                  className="px-4 py-2 text-md font-semibold hover:text-[#3ba52d] flex items-center gap-2 first:rounded-t-md last:rounded-b-md group/item"
+                  className="px-4 py-2 text-md font-semibold hover:text-[#4CAF50] flex items-center gap-2 first:rounded-t-md last:rounded-b-md group/item"
                 >
-                  <span className="w-2 h-2 rounded-full bg-transparent group-hover/item:bg-[#3ba52d]"></span>
+                  <span className="w-2 h-2 rounded-full bg-transparent group-hover/item:bg-[#4CAF50]"></span>
                   {service?.title}
                 </Link>
               ))}
@@ -81,7 +81,7 @@ export default function Header() {
           <Link
             title="Contact Us"
             to="/contact"
-            className="text-md font-semibold hover:text-[#3ba52d] transition-colors"
+            className="text-md font-semibold hover:text-[#4CAF50] transition-colors"
           >
             Contact Us
           </Link>
@@ -93,7 +93,7 @@ export default function Header() {
             <nav className="container py-4 flex flex-col space-y-4">
               <Link
                 to="/"
-                className="text-sm font-medium hover:text-[#3ba52d] transition-colors"
+                className="text-sm font-medium hover:text-[#4CAF50] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -102,7 +102,7 @@ export default function Header() {
               {/* Mobile Services Dropdown */}
               <div className="flex flex-col space-y-2">
                 <button
-                  className="flex items-center justify-between text-sm font-medium hover:text-[#3ba52d] transition-colors"
+                  className="flex items-center justify-between text-sm font-medium hover:text-[#4CAF50] transition-colors"
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
                 >
                   <span>Services</span>
@@ -120,7 +120,7 @@ export default function Header() {
                       <Link
                         key={service?.path}
                         to={service?.path}
-                        className="text-sm font-medium hover:text-[#3ba52d] transition-colors"
+                        className="text-sm font-medium hover:text-[#4CAF50] transition-colors"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {service?.title}
@@ -132,7 +132,7 @@ export default function Header() {
 
               <Link
                 to="/contact"
-                className="text-sm font-medium hover:text-[#3ba52d] transition-colors"
+                className="text-sm font-medium hover:text-[#4CAF50] transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us

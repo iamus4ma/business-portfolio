@@ -190,7 +190,7 @@ export default function TradingSection() {
               {/* White background (initially visible) */}
               <span className="absolute inset-0 bg-white translate-y-0 group-hover:translate-y-full transition-transform duration-500 ease-out"></span>
               {/* Green background (initially hidden) */}
-              <span className="absolute inset-0 bg-green-500 -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
+              <span className="absolute inset-0 bg-[#4CAF50] -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></span>
               {/* Button text */}
               <span className="relative z-10 text-gray-800 group-hover:text-white transition-colors duration-300">
                 Download Brochure
