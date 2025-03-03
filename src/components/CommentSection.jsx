@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 export default function CommentSection() {
@@ -120,9 +121,11 @@ export default function CommentSection() {
         <div>
           <button
             type="submit"
-            className="bg-[#F94D1C] text-white px-8 py-4 rounded hover:bg-black transition-colors text-sm font-medium"
+           className="inline-flex items-center px-8 py-4 bg-[#ff5722] text-white hover:bg-black transition-colors"
           >
             Post Comment
+            <ArrowRight className="ml-2 h-5 w-5" />
+
           </button>
         </div>
       </form>
