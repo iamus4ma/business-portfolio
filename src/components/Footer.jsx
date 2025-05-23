@@ -75,7 +75,7 @@ export default function Footer() {
                 href="tel:+32484163106"
                 className="text-gray-400 hover:text-white transition-colors"
               >
-                +32 484 163 106
+                +32 000 000 000
               </a>
               <Link
                 to="#"

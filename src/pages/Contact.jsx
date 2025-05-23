@@ -59,7 +59,7 @@ export default function Contact() {
 
               <div>
                 <h3 className="text-xl font-bold mb-4">Phone</h3>
-                <p className="text-gray-600">+32 484 163 106</p>
+                <p className="text-gray-600">+32 000 000 000</p>
               </div>
             </div>
 
