@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import CommentSection from "../../components/CommentSection";
+import aftersalePic from "../../assets/afterSale.png";
 
 export default function AfterSale() {
   return (
@@ -8,7 +9,7 @@ export default function AfterSale() {
       <section
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://sjc.microlink.io/gnXlDSJIyYLPmY01wLyMwOj047Dpd3aJYSDcKZ3D3OVRHNQp8kxPnzyOLH3tRwBbFRBtVv1zV7cOOSD2mpSGrw.jpeg')`,
+          backgroundImage: `url(${aftersalePic})`,
         }}
       >
         <div className="absolute inset-0 bg-black/60" />
@@ -46,9 +47,9 @@ export default function AfterSale() {
               <div className="space-y-8">
                 {/* <h1 className="text-4xl font-bold mb-6">After-Sale Services</h1> */}
                 <img
-                  src="https://eastwinners.com/wp-content/uploads/2023/12/blog2-min.png"
+                  src={aftersalePic}
                   alt="Technical support and maintenance"
-                  className="w-full rounded-lg mb-8"
+                  className="w-52 rounded-lg mb-8"
                 />
 
                 <p className="text-gray-500 leading-relaxed">

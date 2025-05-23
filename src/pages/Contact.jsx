@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Plus } from "lucide-react";
+import contactPic from "../assets/contactUs.jpg";
 
 export default function Contact() {
   const handleSubmit = (e) => {
@@ -14,7 +15,7 @@ export default function Contact() {
       <section
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://sjc.microlink.io/gnXlDSJIyYLPmY01wLyMwOj047Dpd3aJYSDcKZ3D3OVRHNQp8kxPnzyOLH3tRwBbFRBtVv1zV7cOOSD2mpSGrw.jpeg')`,
+          backgroundImage: `url(${contactPic})`,
         }}
       >
         <div className="absolute inset-0 bg-black/60" />

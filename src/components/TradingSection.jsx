@@ -1,6 +1,8 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import warehouseForklift from "../assets/warehouse-forklift.png";
+import boxCloseup from "../assets/box-closeup.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -153,8 +155,8 @@ export default function TradingSection() {
               className="absolute bottom-0 right-0 w-[85%] h-[85%] z-10 rounded-lg overflow-hidden shadow-lg"
             >
               <img
-                src="http://eastwinners.com/wp-content/uploads/2024/03/lq2.jpeg"
-                alt="Warehouse Boxes Close-up"
+                src={warehouseForklift}
+                alt="Warehouse Forklift"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -163,8 +165,8 @@ export default function TradingSection() {
               className="absolute top-0 left-0 w-[85%] h-[85%] rounded-lg overflow-hidden shadow-lg"
             >
               <img
-                src="https://eastwinners.com/wp-content/uploads/2024/03/lq3.jpeg"
-                alt="Warehouse Forklift"
+                src={boxCloseup}
+                alt="Warehouse Boxes Close-up"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import CommentSection from "../../components/CommentSection";
+import warehousingPic from "../../assets/warehousing.png";
+import afterSalePic from "../../assets/afterSale.png";
 
 export default function Warehousing() {
   return (
@@ -8,7 +10,7 @@ export default function Warehousing() {
       <section
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://sjc.microlink.io/gnXlDSJIyYLPmY01wLyMwOj047Dpd3aJYSDcKZ3D3OVRHNQp8kxPnzyOLH3tRwBbFRBtVv1zV7cOOSD2mpSGrw.jpeg')`,
+          backgroundImage: `url(${warehousingPic})`,
         }}
       >
         <div className="absolute inset-0 bg-black/60" />
@@ -42,9 +44,9 @@ export default function Warehousing() {
             {/* Main Content */}
             <div className="lg:col-span-2">
               <img
-                src="https://eastwinners.com/wp-content/uploads/2023/12/44643.jpg"
+                src={warehousingPic}
                 alt="Modern warehouse facility"
-                className="w-full rounded-lg mb-8"
+                className="w-52 rounded-lg mb-8"
               />
 
               <div className="space-y-8">
@@ -88,9 +90,9 @@ export default function Warehousing() {
                 </p>
 
                 <img
-                  src="https://eastwinners.com/wp-content/uploads/2024/03/lg8-500x333.jpeg"
+                  src={afterSalePic}
                   alt="Warehouse operations"
-                  className="w-72 rounded-lg mb-8 m-auto"
+                  className="w-52 rounded-lg mb-8 m-auto"
                 />
                 <h2 className="text-lg text-gray-500 font-semibold mb-2">
                   Reducing Transportation Costs

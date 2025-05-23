@@ -9,6 +9,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import client1 from "../assets/client1.png";
+import client2 from "../assets/client2.png";
+import client3 from "../assets/client3.png";
+import client4 from "../assets/client4.png";
+import client5 from "../assets/client5.png";
+import client6 from "../assets/client6.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,12 +36,12 @@ const testimonials = [
 ];
 
 const profileImages = [
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-1.png", style: { top: "5%", left: "15%" } },
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-2.png", style: { top: "5%", right: "15%" } },
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-3.png", style: { top: "40%", left: "5%" } },
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-4.png", style: { top: "40%", right: "5%" } },
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-5.png", style: { bottom: "10%", left: "20%" } },
-  { src: "https://eastwinners.com/wp-content/themes/revel/assets/img/testimonial/rv-9-t-6.png", style: { bottom: "10%", right: "20%" } },
+  { src: client1, style: { top: "5%", left: "15%" } },
+  { src: client2, style: { top: "5%", right: "15%" } },
+  { src: client3, style: { top: "40%", left: "5%" } },
+  { src: client4, style: { top: "40%", right: "5%" } },
+  { src: client5, style: { bottom: "10%", left: "20%" } },
+  { src: client6, style: { bottom: "10%", right: "20%" } },
 ];
 
 export default function TestimonialsSection() {

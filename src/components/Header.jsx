@@ -25,11 +25,12 @@ export default function Header() {
     <header className="bg-white px-10 relative z-50">
       <div className="container flex h-28 items-center justify-between">
         <Link to="/" className="flex items-center space-x-2">
-          <img
+          {/* <img
             src="https://eastwinners.com/wp-content/uploads/2024/03/eastwinner_logo.png"
             alt="East Winners Logo"
             className="w-full h-20"
-          />
+          /> */}
+          <h1 className="text-3xl font-bold text-[#4CAF50]">East Winners</h1>
         </Link>
 
         {/* Mobile menu button */}

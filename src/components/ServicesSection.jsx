@@ -4,6 +4,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Card } from "./ui/Card";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import tradingPic from "../assets/trading.png";
+import warehousingPic from "../assets/warehousing.png";
+import afterSalePic from "../assets/afterSale.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,19 +14,19 @@ const services = [
   {
     title: "Trading (Import Export)",
     description: "Sourcing and import services",
-    image: "https://eastwinners.com/wp-content/uploads/2024/03/lq3.jpeg",
+    image: tradingPic,
     link: "/services/trading",
   },
   {
     title: "After Sale Services",
     description: "Testing and Resell Services",
-    image: "https://eastwinners.com/wp-content/uploads/2024/03/lq2.jpeg",
+    image: afterSalePic,
     link: "/services/after-sale",
   },
   {
     title: "Warehousing",
     description: "Orders processing and 3pl services",
-    image: "https://eastwinners.com/wp-content/uploads/2024/03/lq1.jpeg",
+    image: warehousingPic,
     link: "/services/warehousing",
   },
 ];
@@ -92,13 +95,13 @@ export default function ServicesSection() {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-700" />
               {/* Content */}
               <div className="relative z-10 p-6 flex flex-col justify-around space-y-4 transition-all duration-700 group-hover:text-white h-full">
-                <img
+                {/* <img
                   src={
                     "https://eastwinners.com/wp-content/uploads/2023/12/home-9-testimonial-sh-1.png"
                   }
                   alt={service.title}
                   className="w-16 h-12 object-contain"
-                />
+                /> */}
                 <div className="flex flex-col space-y-2">
                   <h3 className="text-xl font-bold">{service.title}</h3>
                   <p className="text-gray-600 leading-relaxed group-hover:text-white">

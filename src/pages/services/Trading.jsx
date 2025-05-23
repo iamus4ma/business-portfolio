@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import CommentSection from "../../components/CommentSection";
+import tradingPic from "../../assets/trading.png";
+import warehousingPic from "../../assets/warehousing.png";
 
 export default function Trading() {
   return (
@@ -8,7 +10,7 @@ export default function Trading() {
       <section
         className="relative h-[400px] bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://sjc.microlink.io/gnXlDSJIyYLPmY01wLyMwOj047Dpd3aJYSDcKZ3D3OVRHNQp8kxPnzyOLH3tRwBbFRBtVv1zV7cOOSD2mpSGrw.jpeg')`,
+          backgroundImage: `url(${tradingPic})`,
         }}
       >
         <div className="absolute inset-0 bg-black/60" />
@@ -47,9 +49,9 @@ export default function Trading() {
             <div className="lg:col-span-2">
               <div className="space-y-8">
                 <img
-                  src="https://eastwinners.com/wp-content/uploads/2024/04/1380.jpg"
+                  src={tradingPic}
                   alt="Container ship at port"
-                  className="w-full rounded-lg mb-8"
+                  className="w-52 object-cover rounded-lg mb-8"
                 />
 
                 <div className="prose max-w-none">
@@ -82,9 +84,9 @@ export default function Trading() {
                   </div>
 
                   <img
-                    src="https://eastwinners.com/wp-content/uploads/2024/04/7351-300x200.jpg"
+                    src={warehousingPic}
                     alt="Warehouse operations"
-                    className="w-72 rounded-lg mb-8 m-auto"
+                    className="w-52 rounded-lg mb-8 m-auto"
                   />
                   <div>
                     <h2 className="text-lg text-gray-500 font-semibold mb-2">

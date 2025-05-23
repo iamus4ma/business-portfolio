@@ -10,6 +10,7 @@ import TradingSection from "../components/TradingSection";
 import ServicesSection from "../components/ServicesSection";
 import WhyChooseUsSection from "../components/WhyChooseUsSection";
 import TestimonialsSection from "../components/TestimonialsSection";
+import warehouseImage from "../assets/warehouse1.png";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('https://eastwinners.com/wp-content/uploads/2024/04/close-up-warehouse-view.jpg')`,
+            backgroundImage: `url(${warehouseImage})`,
           }}
         >
           {/* <div className="absolute inset-0 bg-black/50" /> */}
